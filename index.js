@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const session = require('express-session')
 const routes = require('./router/friends.js')
 
-let users = []
+let users = {};
 
 const doesExist = (username)=>{
   let userswithsamename = users.filter((user)=>{
